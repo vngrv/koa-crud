@@ -1,0 +1,29 @@
+{
+  "name": "koa-crud",
+  "version": "1.0.0",
+  "description": "1) Работает с базой данных mysql. В субд есть табличка books(1e5 записей, забить самостоятельно случайно, у каждой книги должны быть поля title, date, autor, description, image). Реализация смежных табличек на усмотрение кандидата, архитектурные решения оцениваются.Работает на чистом SQL, без ORM и без Query builder",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vngrv/koa-crud.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vngrv/koa-crud/issues"
+  },
+  "homepage": "https://github.com/vngrv/koa-crud#readme",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-json": "^2.0.2",
+    "koa-route": "^3.2.0",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
