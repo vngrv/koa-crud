@@ -1,0 +1,14 @@
+version: '2'
+services:
+  security:
+    build: ./sample-service
+    ports:
+     - "3000:3000"
+    depends_on:
+     - db
+    environment:
+     - DATABASE_HOST=db
+    volumes:
+     - ./sample-service/:/src
+  db:
+    build: ./database-service

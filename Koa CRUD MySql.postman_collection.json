@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "99f4b03e-3f2c-41b2-9a7d-85f8da670ce7",
+		"name": "Koa CRUD MySql",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create",
+			"item": [
+				{
+					"name": "Add New Book",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"test\",\n\t\"author\": \"test\",\n\t\"image\": \"test\",\n\t\"description\": \"test\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/create/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"create",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "sort",
+			"item": [
+				{
+					"name": "Get Book order by some fields",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"field1\": [\"title\", \"name\"],\n\t\"field2\": [\"date\"]\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/orderby/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"orderby",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "insert",
+			"item": [
+				{
+					"name": "Update book props",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"test\",\n\t\"author\": \"test\",\n\t\"image\": \"test\",\n\t\"name\": \"test\",\n\t\"description\": \"test\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/update/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"update",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
