@@ -3,9 +3,9 @@ const config = {
   database: {
     DATABASE: 'books',
     USERNAME: 'root',
-    PASSWORD: 'password',
+    PASSWORD: 'monsterSAW',
     PORT: '3306',
-    HOST: 'db'
+    HOST: 'localhost'
   }
 }
 

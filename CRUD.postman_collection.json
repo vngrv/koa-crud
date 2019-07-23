@@ -103,17 +103,17 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"title\": \"test\",\n\t\"author\": \"test\",\n\t\"image\": \"test\",\n\t\"name\": \"test\",\n\t\"description\": \"test\"\n}"
+							"raw": "{\n\t\"title\": \"изменен\",\n\t\"author\": \"test1\",\n\t\"image\": \"test13234\",\n\t\"description\": \"test1\"\n}"
 						},
 						"url": {
-							"raw": "localhost:3000/update/2",
+							"raw": "localhost:3000/update/21",
 							"host": [
 								"localhost"
 							],
 							"port": "3000",
 							"path": [
 								"update",
-								"2"
+								"21"
 							]
 						}
 					},
