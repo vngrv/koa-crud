@@ -1,8 +1,8 @@
 FROM mysql:latest
 
-ENV MYSQL_ROOT_PASSWORD 123  
-ENV MYSQL_DATABASE CHIRINOS  
-ENV MYSQL_USER users_service  
-ENV MYSQL_PASSWORD 123
+ENV MYSQL_ROOT_PASSWORD password
+ENV MYSQL_DATABASE books
+ENV MYSQL_USER root
+ENV MYSQL_PASSWORD pass
 
 ADD setup.sql /docker-entrypoint-initdb.d

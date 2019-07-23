@@ -10,6 +10,7 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 -- ---------------------------------------------------------
 
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'
 
 -- CREATE DATABASE "books" ---------------------------------
 CREATE DATABASE IF NOT EXISTS `books` CHARACTER SET utf8 COLLATE utf8_general_ci;
@@ -24,7 +25,7 @@ DROP TABLE IF EXISTS `book` CASCADE;
 
 
 -- CREATE TABLE "book" -----------------------------------------
-CREATE TABLE `book` ( 
+CREATE TABLE `book` (
 	`id` Int( 11 ) AUTO_INCREMENT NOT NULL,
 	`title` VarChar( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'заглавие',
 	`author` VarChar( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'автор',
@@ -80,5 +81,3 @@ UNLOCK TABLES;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 -- ---------------------------------------------------------
-
-

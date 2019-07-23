@@ -2,7 +2,7 @@
 FROM node:latest
 
 # Папка приложения
-ARG APP_DIR=src
+ENV APP_DIR = src
 RUN mkdir -p ${APP_DIR}
 WORKDIR ${APP_DIR}
 
